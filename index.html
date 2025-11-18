@@ -63,48 +63,110 @@
       <span class="carousel-control-next-icon"></span>
     </button>
   </div>
+  <div id="weather-container" style="max-width: 300px; border: 1px solid #ddd; padding: 1rem; margin: 1rem auto; background:#f9f9f9;">
+  <h4>Clima en Bucaramanga</h4>
+  <p id="temperature">Cargando temperatura...</p>
+</div>
 </header>
 
-<main class="container mt-5">
 <section id="atractivos" class="bg-light py-5 mb-5">
   <h2 class="section-title">Atractivos turísticos</h2>
-  <div class="row">
-    <div class="col-md-4 col-sm-6 mb-4">
-      <div class="card h-100 shadow-sm">
-        <img src="img/img4.jpg" class="card-img-top" alt="Parque de los Niños" />
-        <div class="card-body">
-          <h5 class="card-title">
-            <i class="bi bi-geo-alt-fill text-primary"></i>Cerro del Santísimo
-          </h5>
-          <p class="card-text">un mirador emblemático de Floridablanca con una imponente estatua de Cristo y vistas panorámicas de Bucaramanga, 
-            ideal para disfrutar el paisaje y la cultura santandereana.</p>
+  <div id="carouselAtractivos" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm">
+              <img src="img/atractivo1.jpg" class="card-img-top" alt="Parque Nacional del Chicamocha" />
+              <div class="card-body">
+                <h5 class="card-title"><i class="bi bi-geo-alt-fill text-primary"></i> Parque Nacional del Chicamocha</h5>
+                <p class="card-text">Panachi es el destino perfecto para quienes buscan la majestuosidad de la naturaleza combinada con la adrenalina y la cultura.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4 d-none d-md-block">
+            <div class="card h-100 shadow-sm">
+              <img src="img/atractivo2.jpg" class="card-img-top" alt="Centro Cultural del Oriente" />
+              <div class="card-body">
+                <h5 class="card-title"><i class="bi bi-geo-alt-fill text-primary"></i> Centro Cultural del Oriente</h5>
+                <p class="card-text">Descubre su impresionante arquitectura, sus patios interiores y sus salones, que a menudo albergan exposiciones de arte y fotografía, o disfruta de algún 
+                                     concierto o evento cultural. Es un punto de encuentro clave que dinamiza la vida social de la capital santandereana.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4 d-none d-md-block">
+            <div class="card h-100 shadow-sm">
+              <img src="img/atractivo3.jpg" class="card-img-top" alt="Museo de Arte Moderno de Bucaramanga" />
+              <div class="card-body">
+                <h5 class="card-title"><i class="bi bi-geo-alt-fill text-primary"></i>Museo de Arte Moderno de Bucaramanga</h5>
+                <p class="card-text">Para los amantes del arte, este museo alberga una importante colección de arte moderno y contemporáneo, 
+                                     Puedes disfrutar de exposiciones permanentes y temporales de artistas nacionales e internacionales.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-md-4 col-sm-6 mb-4">
-      <div class="card h-100 shadow-sm">
-        <img src="img/img5.jpg" class="card-img-top" alt="PARAPENTE Y VOLADERO LAS AGUILAS" />
-        <div class="card-body">
-          <h5 class="card-title">
-            <i class="bi bi-geo-alt-fill text-primary"></i>Parapente y Voladero Las Águilas
-          </h5>
-          <p class="card-text">Ofrece vuelos tándem con pilotos expertos y vistas espectaculares del 
-            cañón del Chicamocha y el área metropolitana..</p>
+
+      <div class="carousel-item">
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm">
+              <img src="img/img2.jpeg" class="card-img-top" alt="Viaducto Provincial" />
+              <div class="card-body">
+                <h5 class="card-title"><i class="bi bi-geo-alt-fill text-primary"></i> Viaducto Provincial</h5>
+                <p class="card-text">Ofrece vistas impresionantes de una parte de Bucaramanga, especialmente impactantes al atardecer o cuando está iluminado por la noche. 
+                                     Es uno de los viaductos atirantados más altos de América.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4 d-none d-md-block">
+            <div class="card h-100 shadow-sm">
+              <img src="img/atractivo4.jpg" class="card-img-top" alt="Parque San Pio" />
+              <div class="card-body">
+                <h5 class="card-title"><i class="bi bi-geo-alt-fill text-primary"></i>Parque San Pio</h5>
+                <p class="card-text">Ubicado en el exclusivo sector de Cabecera del Llano, el Parque San Pío es un vibrante oasis urbano donde convergen el arte, la gastronomía 
+                                     y la vida social. Es el lugar perfecto para tomar un respiro, ver pasar la vida de la ciudad o disfrutar de un buen café.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4 d-none d-md-block">
+            <div class="card h-100 shadow-sm">
+              <img src="img/atractivo5.jpg" class="card-img-top" alt="Museo Histórico de Santander - Casa de Bolívar" />
+              <div class="card-body">
+                <h5 class="card-title"><i class="bi bi-geo-alt-fill text-primary"></i>Museo Histórico de Santander - Casa de Bolívar</h5>
+                <p class="card-text">Este museo está dedicado a la historia regional de Santander y a la vida de Simón Bolívar, quien se hospedó allí. Es crucial para entender la identidad santandereana y el proceso de la independencia.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-md-4 col-sm-6 mb-4">
-      <div class="card h-100 shadow-sm">
-        <img src="img/img6.jpg" class="card-img-top" alt="JARDIN BOTANICO ELOY VALENZUELA" />
-        <div class="card-body">
-          <h5 class="card-title">
-            <i class="bi bi-geo-alt-fill text-primary"></i>Jardín Botánico Eloy Valenzuela
-          </h5>
-          <p class="card-text">es un pulmón verde en Floridablanca que conserva especies nativas 
-            y ofrece senderos naturales ideales para el descanso y la educación ambiental.</p>
+
+      <div class="carousel-item">
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm">
+              <img src="img/atractivo7.jpg" class="card-img-top" alt="Cavernas y Deporte Extremo en Curití / San Gil" />
+              <div class="card-body">
+                <h5 class="card-title"><i class="bi bi-geo-alt-fill text-primary"></i>Cavernas y Deporte Extremo en Curití / San Gil</h5>
+                <p class="card-text">Ofrece rafting en el Río Fonce y torrentismo, Famoso por sus cuevas, como la Cueva del Yeso o la Cueva de la Vaca, que permiten explorar formaciones de estalactitas y estalagmitas.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
     </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselAtractivos" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselAtractivos" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
   </div>
 </section>
 
@@ -112,98 +174,84 @@
   <div class="container">
     <h2 class="section-title">Planes y experiencias</h2>
     <div class="row">
-      <!-- Plan 1 -->
-   <div class="col-lg-4 col-md-6 mb-4">
-  <div class="card h-100 shadow-sm" style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#modalParapente">
-    <img src="img/parapente1.jpg" class="card-img-top" alt="Parapente">
-    <div class="card-body">
-      <h5 class="card-title">
-        <i class="bi bi-send-fill text-primary"></i>
-        Parapente en Las Águilas
-      </h5>
-      <p class="card-text">
-        Vive la adrenalina sobre el Cañón del Chicamocha con pilotos expertos y vistas espectaculares.
-      </p>
-    </div>
+<!-- Planes y Experiencias - Botones Modificados con data-bs-target -->
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card h-100 shadow-sm text-center">
+    <img src="img/parapente1.jpg" class="card-img-top" alt="Parapente en Las Águilas" style="height:180px; object-fit:cover;">
+    <h5 class="card-title mt-3">
+      <i class="bi bi-send-fill text-primary"></i>
+      Parapente en Las Águilas
+    </h5>
+    <button class="btn btn-warning my-3" data-bs-toggle="modal" data-bs-target="#modalPlan1">
+      Más detalles
+    </button>
   </div>
 </div>
 
-      <!-- Plan 2 -->
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card h-100 shadow-sm">
-          <img src="img/img7.jpg" class="card-img-top" alt="City Tour">
-          <div class="card-body">
-            <h5 class="card-title">
-              <i class="bi bi-bus-front text-success"></i>
-              City Tour Bucaramanga
-            </h5>
-            <p class="card-text">
-              Recorre la ciudad en bus panorámico y conoce los principales sitios históricos y modernos en una tarde inolvidable.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- Plan 3 -->
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card h-100 shadow-sm">
-          <img src="img/img7.jpg" class="card-img-top" alt="Gastronomía">
-          <div class="card-body">
-            <h5 class="card-title">
-              <i class="bi bi-cup-straw text-warning"></i>
-              Ruta Gastronómica Santandereana
-            </h5>
-            <p class="card-text">
-              Descubre sabores auténticos: hormiga culona, cabrito, mute y dulces típicos en restaurantes tradicionales.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- Plan 4 -->
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card h-100 shadow-sm">
-          <img src="img/img7.jpg" class="card-img-top" alt="Senderismo">
-          <div class="card-body">
-            <h5 class="card-title">
-              <i class="bi bi-tree-fill text-success"></i>
-              Senderismo Cerro La Judía
-            </h5>
-            <p class="card-text">
-              Camina por rutas ecológicas guiadas y observa la fauna, flora y vistas únicas de Bucaramanga y su entorno.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- Plan 5 -->
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card h-100 shadow-sm">
-          <img src="img/img7.jpg" class="card-img-top" alt="Taller Hormiga Culona">
-          <div class="card-body">
-            <h5 class="card-title">
-              <i class="bi bi-egg-fried text-danger"></i>
-              Taller de Hormiga Culona
-            </h5>
-            <p class="card-text">
-              Aprende sobre la historia y prepara este icónico manjar santandereano en un taller divertido para turistas.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- Plan 6 -->
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card h-100 shadow-sm">
-          <img src="img/img7.jpg" class="card-img-top" alt="Spa Relax">
-          <div class="card-body">
-            <h5 class="card-title">
-              <i class="bi bi-flower2 text-pink"></i>
-              Spa & Relax Natural
-            </h5>
-            <p class="card-text">
-              Relájate en spas de la zona en contacto con la naturaleza y disfruta de masajes con productos locales.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card h-100 shadow-sm text-center">
+    <img src="img/planes2.jpeg" class="card-img-top" alt="City tour por Girón, pueblo patrimonio" style="height:180px; object-fit:cover;">
+    <h5 class="card-title mt-3">
+      <i class="bi bi-bus-front text-success"></i>
+      City tour por Girón, pueblo patrimonio
+    </h5>
+    <button class="btn btn-warning my-3" data-bs-toggle="modal" data-bs-target="#modalPlan2">
+      Más detalles
+    </button>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card h-100 shadow-sm text-center">
+    <img src="img/planes3.jpg" class="card-img-top" alt="Tour gastronómico por Cabecera o Cañaveral" style="height:180px; object-fit:cover;">
+    <h5 class="card-title mt-3">
+      <i class="bi bi-cup-straw text-warning"></i>
+      Tour gastronómico por Cabecera o Cañaveral
+    </h5>
+    <button class="btn btn-warning my-3" data-bs-toggle="modal" data-bs-target="#modalPlan3">
+      Más detalles
+    </button>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card h-100 shadow-sm text-center">
+    <img src="img/planes4.jpg" class="card-img-top" alt="Caminata al Cerro de La Judía o Los Santos" style="height:180px; object-fit:cover;">
+    <h5 class="card-title mt-3">
+      <i class="bi bi-tree-fill text-success"></i>
+      Caminata al Cerro de La Judía o Los Santos
+    </h5>
+    <button class="btn btn-warning my-3" data-bs-toggle="modal" data-bs-target="#modalPlan4">
+      Más detalles
+    </button>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card h-100 shadow-sm text-center">
+    <img src="img/planes5.jpg" class="card-img-top" alt="Cerro del Santísimo" style="height:180px; object-fit:cover;">
+    <h5 class="card-title mt-3">
+      <i class="bi bi-egg-fried text-danger"></i>
+      Cerro del Santísimo
+    </h5>
+    <button class="btn btn-warning my-3" data-bs-toggle="modal" data-bs-target="#modalPlan5">
+      Más detalles
+    </button>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card h-100 shadow-sm text-center">
+    <img src="img/img6.jpg" class="card-img-top" alt="Jardín Botánico Eloy Valenzuela" style="height:180px; object-fit:cover;">
+    <h5 class="card-title mt-3">
+      <i class="bi bi-flower2 text-pink"></i>
+      Jardín Botánico Eloy Valenzuela
+    </h5>
+    <button class="btn btn-warning my-3" data-bs-toggle="modal" data-bs-target="#modalPlan6">
+      Más detalles
+    </button>
+  </div>
+</div>
   </div>
 </section>
 
@@ -216,9 +264,9 @@
   <div class="card h-100 shadow-sm" style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#modalNegocioRestaurante">
     <img src="img/restaurante.jpg" class="card-img-top" alt="Restaurante típico" />
     <div class="card-body">
-      <h5 class="card-title">Restaurante La Cueva</h5>
+      <h5 class="card-title">El Garaje</h5>
       <p class="card-text">Comida típica santandereana en un ambiente familiar y acogedor.</p>
-      <a href="https://www.instagram.com/losrodriguezfd/?hl=es" target="_blank" class="btn btn-primary btn-sm">Visitar sitio</a>
+      <a href="https://www.pidegaraje.com/branch-offices" target="_blank" class="btn btn-primary btn-sm">Visitar sitio</a>
     </div>
   </div>
 </div>
@@ -228,26 +276,31 @@
         <div class="card h-100 shadow-sm">
           <img src="img/hotel.jpg" class="card-img-top" alt="Hotel boutique" />
           <div class="card-body">
-            <h5 class="card-title">Hotel Santander</h5>
+            <h5 class="card-title">Holiday Inn Bucaramanga Cacique</h5>
             <p class="card-text">Puerta de entrada para turistas con habitaciones confortables y servicios exclusivos.</p>
-            <a href="https://www.hotelsantander.com" target="_blank" class="btn btn-primary btn-sm">Visitar sitio</a>
+            <a href="https://holidaybga.com/" target="_blank" class="btn btn-primary btn-sm">Visitar sitio</a>
           </div>
         </div>
       </div>
       <!-- Negocio 3 -->
       <div class="col-md-4 col-sm-6 mb-4">
         <div class="card h-100 shadow-sm">
-          <img src="img/agencia.jpeg" class="card-img-top" alt="Agencia de tours" />
+          <img src="img/agencia.jpg" class="card-img-top" alt="Agencia de tours" />
           <div class="card-body">
-            <h5 class="card-title">Agencia Vuela Alto</h5>
+            <h5 class="card-title">toursbucaramanga</h5>
             <p class="card-text">Tours personalizados y excursiones de aventura para explorar Santander y más allá.</p>
-            <a href="https://www.vuelalto.com" target="_blank" class="btn btn-primary btn-sm">Visitar sitio</a>
+            <a href="https://www.instagram.com/toursbucaramanga/?hl=es" target="_blank" class="btn btn-primary btn-sm">Visitar sitio</a>
           </div>
         </div>
       </div>
       <!-- Puedes agregar más negocios aquí -->
     </div>
   </div>
+  <div class="text-center mb-4">
+  <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#modalAgregarNegocio">
+    <i class="bi bi-plus-lg"></i> Quiero añadir mi negocio
+  </button>
+</div>
 </section>
 
 
@@ -293,7 +346,7 @@
           <li><strong>Precio:</strong> Desde $150.000 COP</li>
         </ul>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.272918974471!2d-73.1354743!3d7.0892128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6839b02c2a3ebb%3A0x20be0d51665623a3!2sParapente%20Las%20%C3%81guilas!5e0!3m2!1ses!2sco!4v1699673404651!5m2!1ses!2sco" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
+          </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
       </div>
@@ -325,6 +378,219 @@
     </div>
   </div>
 </div>
+<div class="modal fade" id="modalAgregarNegocio" tabindex="-1" aria-labelledby="modalAgregarNegocioLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form id="formAgregarNegocio">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalAgregarNegocioLabel">Agregar nuevo negocio</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="nombreNegocio" class="form-label">Nombre del negocio</label>
+            <input type="text" class="form-control" id="nombreNegocio" name="nombreNegocio" required>
+          </div>
+          <div class="mb-3">
+            <label for="tipoNegocio" class="form-label">Tipo</label>
+            <select class="form-select" id="tipoNegocio" name="tipoNegocio" required>
+              <option value="" selected disabled>Seleccione...</option>
+              <option value="Restaurante">Restaurante</option>
+              <option value="Hotel">Hotel</option>
+              <option value="Agencia">Agencia</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="direccionNegocio" class="form-label">Dirección</label>
+            <input type="text" class="form-control" id="direccionNegocio" name="direccionNegocio" required>
+          </div>
+          <div class="mb-3">
+            <label for="telefonoNegocio" class="form-label">Número de contacto</label>
+            <input type="tel" class="form-control" id="telefonoNegocio" name="telefonoNegocio">
+          </div>
+          <div id="mensajeExito" class="alert alert-success d-none" role="alert">
+            <i class="bi bi-check-lg"></i> Solicitud enviada con éxito.
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<script src="formScript.js"></script>
+<script src="climaScript.js"></script>
+<div class="modal fade" id="modalPlan1" tabindex="-1" aria-labelledby="modalPlan1Label" aria-hidden="true">
+  <div class="modal-dialog modal-md modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalPlan1Label">Parapente en Las Águilas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <a href="img/parapente3 (2).jpg" target="_blank">
+          <img src="img/parapente3 (2).jpg" alt="Parapente" class="img-fluid mb-3 rounded" style="max-height:260px;">
+        </a>
+        <p>Disfruta vuelos en tándem con pilotos expertos sobre el impresionante Cañón del Chicamocha y la gran área metropolitana. Ideal para amantes de la aventura y la naturaleza.</p>
+        <ul>
+          <li><strong>Horarios:</strong> Lunes a domingo, 8:00 AM - 5:00 PM</li>
+          <li><strong>Duración:</strong> 30 minutos de vuelo</li>
+          <li><strong>Ubicación:</strong> Parque Las Águilas, Floridablanca</li>
+          <li><strong>Precio:</strong> Desde $150.000 COP</li>
+        </ul>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.272918974471!2d-73.1354743!3d7.0892128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6839b02c2a3ebb%3A0x20be0d51665623a3!2sParapente%20Las%20%C3%81guilas!5e0!3m2!1ses!2sco!4v1699673404651!5m2!1ses!2sco" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
+<!-- Modal Plan 2: City tour por Girón, pueblo patrimonio -->
+<div class="modal fade" id="modalPlan2" tabindex="-1" aria-labelledby="modalPlan2Label" aria-hidden="true">
+  <div class="modal-dialog modal-md modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalPlan2Label">City tour por Girón, pueblo patrimonio</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/planes2.jpeg" alt="City tour por Girón, pueblo patrimonio" class="img-fluid mb-3 rounded" style="max-height:260px;">
+        <p>te permite explorar su arquitectura colonial a pie por calles empedradas, visitar la Basílica Menor San Juan Bautista, la Casa Museo Mansión del Frayle 
+            y el Parque de Las Nieves. Los tours suelen incluir degustaciones de dulces típicos, como el maracumango, y muchos recorridos combinan esta visita con el 
+            Ecoparque Cerro del Santísimo en Floridablanca, al que se accede en teleférico. </p>
+        <!-- Puedes agregar horarios, ubicación, precios, etc. -->
+         <ul>
+          <li><strong>Horarios:</strong> Lunes a domingo, 8:00 AM - 7:00 PM</li>
+          <li><strong>Duración:</strong> todo el dia </li>
+          <li><strong>Ubicación:</strong> Parque principal Giron</li>
+          <li><strong>Precio:</strong> Desde $20.000 COP</li>
+        </ul>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.5029333861075!2d-73.17199842415096!3d7.067535516600492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e683e9091aeb1c3%3A0x58a2c4b8b0ac39d1!2sParque%20Principal%20de%20Gir%C3%B3n!5e0!3m2!1ses-419!2sco!4v1763478842268!5m2!1ses-419!2sco" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      </div>
+       <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Plan 3: Ruta Gastronómica Santandereana -->
+<div class="modal fade" id="modalPlan3" tabindex="-1" aria-labelledby="modalPlan3Label" aria-hidden="true">
+  <div class="modal-dialog modal-md modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalPlan3Label">Tour gastronómico por Cabecera o Cañaveral</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/planes3.jpg" alt="Ruta Gastronómica" class="img-fluid mb-3 rounded" style="max-height:260px;">
+        <p>Puedes probar mute santandereano, cabro, pepitoria, hormigas culonas y postres típicos. También hay cafés y bares muy buenos.</p>
+        <!-- Detalles adicionales aquí -->
+         <ul>
+          <li><strong>Horarios:</strong> Lunes a domingo, 8:00 AM - 5:00 PM</li>
+          <li><strong>Duración:</strong> todo el dia</li>
+          <li><strong>Ubicación:</strong> Cañaveral</li>
+          <li><strong>Precio:</strong> Desde $25.000 COP</li>
+        </ul>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.4124282915222!2d-73.26700732415287!3d6.469325723788729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e69c36f31433d03%3A0xf791dc4f273852bb!2sHormigas%20culonas%20de%20santander!5e0!3m2!1ses-419!2sco!4v1763479027862!5m2!1ses-419!2sco" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Plan 4: Caminata al Cerro de La Judía o Los Santos -->
+<div class="modal fade" id="modalPlan4" tabindex="-1" aria-labelledby="modalPlan4Label" aria-hidden="true">
+  <div class="modal-dialog modal-md modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalPlan4Label">Caminata al Cerro de La Judía o Los Santos</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/planes4.jpg" alt="Senderismo Cerro La Judía" class="img-fluid mb-3 rounded" style="max-height:260px;">
+        <p>Para los que les gusta el senderismo. Rutas seguras, vistas buenas y clima fresco temprano.</p>
+        <!-- Más detalles, horarios, ubicación -->
+         <ul>
+          <li><strong>Horarios:</strong> Lunes a domingo, 8:00 AM - 5:00 PM</li>
+          <li><strong>Duración:</strong> todo el dia</li>
+          <li><strong>Ubicación:</strong>Caminata al Cerro de La Judía </li>
+          <li><strong>Precio:</strong> gratis</li>
+        </ul>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15837.010589814816!2d-73.0400219386027!3d7.096687779906251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6841b7e3938769%3A0x1c57be7bc362d787!2sCerro%20La%20Judia!5e0!3m2!1ses-419!2sco!4v1763479199213!5m2!1ses-419!2sco" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Plan 5: Cerro del Santísimo -->
+<div class="modal fade" id="modalPlan5" tabindex="-1" aria-labelledby="modalPlan5Label" aria-hidden="true">
+  <div class="modal-dialog modal-md modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalPlan5Label">Cerro del Santísimo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/planes5.jpg" alt="Cerro del Santísimo" class="img-fluid mb-3 rounded" style="max-height:260px;">
+        <p>Un mirador brutal con la estatua del Santísimo, teleférico, zonas verdes y música en vivo algunos días. Ideal para fotos y atardecer.</p>
+        <!-- Más detalles -->
+         <ul>
+          <li><strong>Horarios:</strong> Miércoles a viernes: 3:00 p.m. a 9:00 p.m.
+                                         Sábados, domingos y festivos: 2:00 p.m. a 9:00 p.m.</li>
+          <li><strong>Duración:</strong> toda la tarde</li>
+          <li><strong>Ubicación:</strong> Cerro del Santísimo </li>
+          <li><strong>Precio:</strong> $29.000 COP (Adulto) / $18.000 COP (Niño)</li>
+        </ul>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.3717180767517!2d-73.07057962415092!3d7.082833816409125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e684066ccbb6a03%3A0xec6178a0ca30d571!2sParque%20Cerro%20del%20Sant%C3%ADsimo!5e0!3m2!1ses-419!2sco!4v1763479316270!5m2!1ses-419!2sco" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Plan 6: Spa & Relax Natural -->
+<div class="modal fade" id="modalPlan6" tabindex="-1" aria-labelledby="modalPlan6Label" aria-hidden="true">
+  <div class="modal-dialog modal-md modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalPlan6Label">Jardín Botánico Eloy Valenzuela</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/img6.jpg" alt="Jardín Botánico Eloy Valenzuela" class="img-fluid mb-3 rounded" style="max-height:260px;">
+        <p>Un espacio natural perfecto para relajarse, caminar entre senderos, ver lagos, mariposas y mucha vegetación. Es ideal para fotos, hacer picnic suave o simplemente desconectarse del ruido de la ciudad.</p>
+        <!-- Más detalles -->
+         <ul>
+          <li><strong>Horarios:</strong> martes a domingo de 6:00 a.m. a 4:00 p.m. para el público general.</li>
+          <li><strong>Duración:</strong> todo el dia</li>
+          <li><strong>Ubicación:</strong> Floridablanca, Santander. Según fuentes está en la Avenida Bucarica / entrada por la carretera antigua.</li>
+          <li><strong>Precio:</strong> Adultos: $5.000 COP según varias fuentes.
+                                       Niños menores de 8 años: $2.000 COP</li>
+        </ul>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.4957573542083!2d-73.09247952415097!3d7.068373016590026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e683f7d517e2d83%3A0x59a2c0642ca2cfb6!2sJard%C3%ADn%20Bot%C3%A1nico%20Eloy%20Valenzuela!5e0!3m2!1ses-419!2sco!4v1763479558957!5m2!1ses-419!2sco" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>

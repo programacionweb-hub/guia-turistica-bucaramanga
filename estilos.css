@@ -20,7 +20,7 @@ body {
   transition: color 0.2s;
 }
 .nav-link:hover {
-  color: #ffd700 !important; /* amarillo dorado */
+  color: #3eca51 !important; /* amarillo dorado */
 }
 
 .hero {
