@@ -1,4 +1,3 @@
-// climaScript.js
 async function obtenerClima() {
     const url = 'https://api.open-meteo.com/v1/forecast?latitude=7.1254&longitude=-73.1198&hourly=temperature_2m';
     try {
@@ -15,3 +14,4 @@ async function obtenerClima() {
 }
 
 obtenerClima();
+
